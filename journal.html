@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Journal | Sanskriti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Alex+Brush&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="journal-page">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            >sanskriti<small>Traditions Redesigned</small></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">What's New</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="journal.html"
+                  aria-current="page"
+                  >Journal</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-3">
+              <a class="text-white" href="#" aria-label="Search"
+                ><i class="bi bi-search"></i
+              ></a>
+              <a class="text-white" href="#" aria-label="Wishlist"
+                ><i class="bi bi-heart"></i
+              ></a>
+              <a class="text-white" href="#" aria-label="Account"
+                ><i class="bi bi-person"></i
+              ></a>
+              <a class="text-white" href="#" aria-label="Bag"
+                ><i class="bi bi-bag"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="journal-hero" aria-labelledby="journalHeroTitle">
+        <div class="journal-hero-copy">
+          <h1 id="journalHeroTitle">
+            The Language of <em>Banarasi Weaving</em>
+          </h1>
+          <p class="mt-4">
+            Discover the artistry behind Banarasi textiles where intricate
+            motifs, ceremonial symbolism, and handwoven narratives come together
+            to create timeless expressions of heritage. Every weave carries
+            memory, preserving traditions shaped across generations of
+            craftsmanship.
+          </p>
+        </div>
+        <img
+          class="journal-hero-image"
+          src="images/journal1.png"
+          alt="A richly woven Banarasi sari displayed in a warm atelier"
+        />
+      </section>
+
+      <div class="container">
+        <div class="journal-tools">
+          <h2 class="h6 text-uppercase mb-0">Selected Stories</h2>
+          <nav class="journal-filter" aria-label="Filter journal stories">
+            <a href="#stories" class="active">All stories</a>
+            <a href="#stories">Craft</a>
+            <a href="#stories">Textiles</a>
+            <a href="#stories">Heritage</a>
+          </nav>
+        </div>
+
+        <section id="stories" class="journal-grid" aria-label="Journal stories">
+          <div class="journal-column">
+            <article class="journal-card journal-feature">
+              <img
+                src="images/journal2.png"
+                alt="A bride in an heirloom gold ensemble in a palace interior"
+              />
+              <div class="journal-feature-copy">
+                <h2>Royal Narratives Reimagined</h2>
+                <p>
+                  A closer look into heirloom craftsmanship, regal silhouettes,
+                  and ceremonial dressing inspired by royal artistry.
+                </p>
+                <a href="#story-1"
+                  >Know more <span aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+            <article class="journal-card journal-feature">
+              <img
+                src="images/journal3.png"
+                alt="A model wearing a traditional embroidered ceremonial drape"
+              />
+              <div class="journal-feature-copy">
+                <h2>Threads of Jamdani Heritage</h2>
+                <p>
+                  Meet the makers preserving delicate motifs and generations of
+                  textile knowledge.
+                </p>
+                <a href="#story-2"
+                  >Know more <span aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="journal-column">
+            <article class="journal-card">
+              <img
+                src="images/journal4.png"
+                alt="A soft pink Jamdani sari with fine woven motifs"
+              />
+              <h2>Threads of Jamdani Heritage</h2>
+              <p>
+                Discover the delicate language of weaving passed through
+                generations.
+              </p>
+              <a href="#story-3">Know more <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="journal-card">
+              <img
+                src="images/journal5.png"
+                alt="Close portrait of a model wearing heirloom jewellery"
+              />
+              <h2>Adornment, With Intention</h2>
+              <p>
+                How ceremonial jewellery completes the language of the drape.
+              </p>
+              <a href="#story-4">Know more <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="journal-card">
+              <img
+                src="images/journal6.png"
+                alt="An artisan's hands working on a silk textile"
+              />
+              <h2>The Handloom Archive</h2>
+              <p>
+                Stories of patient hands, heritage looms, and enduring
+                techniques.
+              </p>
+              <a href="#story-5">Know more <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+          <div class="journal-column">
+            <article class="journal-card">
+              <img
+                src="images/journal7.png"
+                alt="A bride in a champagne silk ensemble among flowers"
+              />
+              <h2>Threads of Jamdani Heritage</h2>
+              <p>
+                Discover the delicate language of weaving passed through
+                generations.
+              </p>
+              <a href="#story-6">Know more <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="journal-card">
+              <img
+                src="images/journal8.png"
+                alt="A model in a contemporary silk sari"
+              />
+              <h2>Modern Heirlooms</h2>
+              <p>
+                Contemporary silhouettes shaped by the beauty of traditional
+                craft.
+              </p>
+              <a href="#story-7">Know more <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="journal-card">
+              <img
+                src="images/journal9.png"
+                alt="A model in a gold ceremonial sari"
+              />
+              <h2>At the Golden Hour</h2>
+              <p>
+                Celebration dressing inspired by light, texture, and memory.
+              </p>
+              <a href="#story-8">Know more <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <a class="navbar-brand text-white d-inline-block" href="index.html"
+              >sanskriti<small>Traditions Redesigned</small></a
+            >
+            <p class="footer-tagline mt-3 mb-0">
+              Timeless craftsmanship.<br />Unforgettable celebrations.
+            </p>
+            <hr class="ornament my-3 ms-0" />
+            <p class="small footer-description">
+              Sanskriti is where heritage artistry meets contemporary elegance —
+              thoughtfully crafted for weddings, festivities, and moments that
+              deserve timeless beauty.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Menu</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="journal.html">Journal</a></li>
+              <li class="mb-2"><a href="about.html">About us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Collections</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="shop.html">Bridal Couture</a></li>
+              <li class="mb-2"><a href="shop.html">Festive Edit</a></li>
+              <li class="mb-2"><a href="shop.html">Heritage Weaves</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Customer Care</h6>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="#">Craftsmanship</a></li>
+              <li class="mb-2"><a href="#">Care Guide</a></li>
+              <li class="mb-2"><a href="#">Shipping &amp; Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Boutique</h6>
+            <p class="small">
+              Sanskriti Boutique<br />DLF Emporio, Vasant Kunj<br />New Delhi —
+              110070
+            </p>
+            <p class="small">+91 11 4100 5678</p>
+          </div>
+        </div>
+        <p class="footer-watermark text-center mt-5 mb-0" aria-hidden="true">
+          SANSKRITI
+        </p>
+        <hr class="border-secondary mt-4" />
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center gap-3"
+        >
+          <p class="small mb-0">&copy; 2026 Sanskriti. All rights reserved.</p>
+          <div class="d-flex gap-3 small">
+            <a href="#">Instagram</a><a href="#">Pinterest</a
+            ><a href="#">Facebook</a><a href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

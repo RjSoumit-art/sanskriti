@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanskriti | Traditions Redesigned</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Alex+Brush&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            >sanskriti<small>Traditions Redesigned</small></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">What's New</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="journal.html">Journal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-3">
+              <a class="text-white" href="#" aria-label="Search"
+                ><i class="bi bi-search"></i
+              ></a>
+              <a class="text-white" href="#" aria-label="Wishlist"
+                ><i class="bi bi-heart"></i
+              ></a>
+              <a class="text-white" href="#" aria-label="Account"
+                ><i class="bi bi-person"></i
+              ></a>
+              <a class="text-white" href="#" aria-label="Bag"
+                ><i class="bi bi-bag"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="img-stack hero-stack">
+          <img
+            class="hero-media w-100"
+            src="images/herobackground.png"
+            alt="Models draped in red and gold heritage sarees"
+          />
+          <div class="d-flex align-items-center hero-overlay">
+            <div class="container text-white">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h1 class="hero-caption fw-bold mb-0">DRAPED IN</h1>
+                  <p class="script hero-script mb-3">heritage</p>
+                  <p class="mb-4 hero-description">
+                    Rooted in heritage and crafted with timeless artistry, each
+                    drape reflects the richness of Indian craftsmanship, with
+                    refined silhouettes, intricate textures, and contemporary
+                    elegance.
+                  </p>
+                  <div class="row g-3 py-3 hero-image-row">
+                    <div class="col-6">
+                      <img
+                        class="img-fluid"
+                        width="280"
+                        height="360"
+                        src="images/hero1.png"
+                        alt="Portrait of a woman wrapped in a red heritage shawl"
+                      />
+                    </div>
+                    <div class="col-6">
+                      <img
+                        class="img-fluid"
+                        width="280"
+                        height="360"
+                        src="images/hero2.png"
+                        alt="Close-up of red zari brocade fabric"
+                      />
+                    </div>
+                  </div>
+                  <a href="shop.html" class="btn btn-outline-light px-4 py-2"
+                    >Explore Collection</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container d-flex align-items-center">
+          <div class="align-items-left mb-4 gy-3">
+            <div class="row-lg-8">
+              <h2 id="traditionsTitle">
+                <span class="script">traditions</span> Reimagined
+              </h2>
+              <p class="text-muted traditions-description">
+                A curated selection of newly arrived handcrafted silhouettes
+                designed to celebrate timeless elegance through modern Indian
+                craft.
+              </p>
+            </div>
+            <div class="row-lg-4 d-flex gap-2">
+              <button
+                class="btn btn-outline-maroon btn-sm rounded-circle"
+                type="button"
+                onclick="scrollRow('traditionsRail', -1)"
+                aria-label="Previous"
+              >
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button
+                class="btn btn-outline-maroon btn-sm rounded-circle"
+                type="button"
+                onclick="scrollRow('traditionsRail', 1)"
+                aria-label="Next"
+              >
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="scroll-row" id="traditionsRail">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/new1.png"
+                alt="Rang Mahal Zari Saree in deep red with antique gold borders"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">Rang Mahal Zari Saree</h3>
+                <p class="card-text small">
+                  Deep red handwoven zari saree with antique gold borders and
+                  intricate heritage motifs.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <span class="card-price">₹18,950</span>
+                  <a href="product.html" class="btn btn-outline-maroon btn-sm"
+                    >Shop Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/new2.png"
+                alt="Noor Bandhani Drape in traditional bandhani silk"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">Noor Bandhani Drape</h3>
+                <p class="card-text small">
+                  Traditional bandhani silk saree finished with handcrafted
+                  embroidery and delicate edging.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <span class="card-price">₹16,800</span>
+                  <a href="product.html" class="btn btn-outline-maroon btn-sm"
+                    >Shop Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="images/new3.png"
+                alt="Maharaja Bandhgala Edit structured jacket with antique finishing"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">Maharaja Bandhgala Edit</h3>
+                <p class="card-text small">
+                  Structured bandhgala jacket with antique finishing and refined
+                  detailing.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <span class="card-price">₹20,800</span>
+                  <a href="product.html" class="btn btn-outline-maroon btn-sm"
+                    >Shop Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="heritage-section py-5">
+        <div class="container text-center">
+          <h2 id="heritageTitle">
+            THE <span class="script">house of heritage</span>
+          </h2>
+          <hr class="ornament mx-auto my-3" />
+          <div class="row justify-content-center align-items-end g-3 mt-2">
+            <div class="col-6 col-md-3">
+              <img
+                class="gallery-img g-short"
+                src="images/brand1.png"
+                alt="Red brocade saree fabric detail"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                class="gallery-img g-tall"
+                src="images/brand2.png"
+                alt="Model in a red bridal saree beside carved wooden doors"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                class="gallery-img g-tall"
+                src="images/brand3.png"
+                alt="Model in an olive green silk saree"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                class="gallery-img g-short"
+                src="images/brand4.png"
+                alt="Folded red banarasi saree with gold border"
+              />
+            </div>
+          </div>
+          <p class="text-muted small mt-3 mb-0">1/6</p>
+          <h3 class="script mt-3">Heritage Drapes</h3>
+          <p class="text-muted small mx-auto heritage-description">
+            Timeless sarees, festive drapes, and handcrafted silhouettes
+            inspired by India's textile heritage.
+          </p>
+          <a href="shop.html" class="btn btn-outline-maroon mt-2"
+            >Explore Collection <i class="bi bi-arrow-right ms-1"></i
+          ></a>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-5">
+              <h2 id="curatedTitle">
+                Curated Heritage <span class="script">edits</span>
+              </h2>
+              <hr class="ornament my-3 ms-0" />
+              <div class="accordion accordion-flush" id="editsAccordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#edit1"
+                    >
+                      The Zari Edit
+                    </button>
+                  </h3>
+                  <div
+                    id="edit1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#editsAccordion"
+                  >
+                    <div class="accordion-body small text-muted">
+                      Hand-worked zari textiles celebrating heirloom goldwork.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#edit2"
+                    >
+                      House of Noor
+                    </button>
+                  </h3>
+                  <div
+                    id="edit2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#editsAccordion"
+                  >
+                    <div class="accordion-body small text-muted">
+                      Refined bandhani and block-printed festive silhouettes.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#edit3"
+                    >
+                      Crimson Heirlooms
+                    </button>
+                  </h3>
+                  <div
+                    id="edit3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#editsAccordion"
+                  >
+                    <div class="accordion-body small text-muted">
+                      Bridal reds handcrafted for grand celebrations.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#edit4"
+                    >
+                      The Festive Atelier
+                    </button>
+                  </h3>
+                  <div
+                    id="edit4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#editsAccordion"
+                  >
+                    <div class="accordion-body small text-muted">
+                      Occasion wear designed for celebratory moments.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#edit5"
+                    >
+                      Silk Stories
+                    </button>
+                  </h3>
+                  <div
+                    id="edit5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#editsAccordion"
+                  >
+                    <div class="accordion-body small text-muted">
+                      Pure silk weaves sourced from heritage looms.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#edit6"
+                    >
+                      The Couture Archive
+                    </button>
+                  </h3>
+                  <div
+                    id="edit6"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#editsAccordion"
+                  >
+                    <div class="accordion-body small text-muted">
+                      Archival couture pieces reimagined for today.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <img
+                class="img-fluid w-100"
+                src="images/featured1.png"
+                alt="Family in festive red and gold ethnic wear"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-center mb-4 gy-3">
+            <div class="col-lg-4">
+              <h2 id="cherishTitle" class="mb-0">
+                MOST <span class="script">cherished</span>
+              </h2>
+            </div>
+            <div class="col-lg-6">
+              <nav class="d-flex flex-wrap gap-4" aria-label="Categories">
+                <a
+                  class="fw-semibold border-bottom border-2 brand-link"
+                  href="#"
+                  >Bridal Couture</a
+                >
+                <a class="text-muted" href="#">Festive Drapes</a>
+                <a class="text-muted" href="#">Evening Elegance</a>
+                <a class="text-muted" href="#">Modern Heirlooms</a>
+              </nav>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="images/category1.png"
+                  alt="Model wearing Banarasi Zari Saree with layered gold jewellery"
+                />
+                <div class="card-body d-flex flex-column">
+                  <p class="text-muted text-uppercase small mb-1">
+                    The Crimson Edit
+                  </p>
+                  <h3 class="card-title h5">Banarasi Zari Saree</h3>
+                  <p class="card-text small">
+                    Handwoven textures, regal zari craftsmanship, curated for
+                    grand celebrations and festive moments.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-auto"
+                  >
+                    <span class="card-price">₹ 38,500</span>
+                    <a href="product.html" class="btn btn-outline-maroon btn-sm"
+                      >Shop Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex flex-column gap-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="images/category2.png"
+                  alt="Embroidered Silk Ensemble"
+                />
+                <div class="card-body d-flex flex-column">
+                  <p class="text-muted text-uppercase small mb-1">
+                    Modern Shringar
+                  </p>
+                  <h3 class="card-title h5">Embroidered Silk Ensemble</h3>
+                  <p class="card-text small">
+                    Contemporary silk saree crafted through fluid drapes and
+                    refined embroidery.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-auto"
+                  >
+                    <span class="card-price">₹ 25,800</span>
+                    <a href="product.html" class="btn btn-outline-maroon btn-sm"
+                      >Shop Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <blockquote
+                class="story-quote text-center fs-4 px-3 mb-0 flex-grow-1 d-flex align-items-center justify-content-center"
+              >
+                "An ode to heirloom textures, graceful femininity, and modern
+                sophistication."
+              </blockquote>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img
+                  class="card-img-top"
+                  src="images/category3.png"
+                  alt="Model in a handcrafted golden festive drape"
+                />
+                <div class="card-body d-flex flex-column">
+                  <p class="text-muted text-uppercase small mb-1">
+                    Satrangdhani
+                  </p>
+                  <h3 class="card-title h5">Handcrafted Festive Drape</h3>
+                  <p class="card-text small">
+                    Classic Indian craftsmanship reimagined through luxurious
+                    detailing and contemporary couture.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-auto"
+                  >
+                    <span class="card-price">₹ 31,200</span>
+                    <a href="product.html" class="btn btn-outline-maroon btn-sm"
+                      >Shop Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section py-5 text-center">
+        <div class="container">
+          <h2 id="ctaTitle" class="mb-4 cta-heading">
+            Crafted For Celebrations That<br />Deserve Timeless Elegance.<br />Couture
+            Designed Around You.
+          </h2>
+          <img
+            class="img-fluid mb-3 cta-image"
+            src="images/philosophy.png"
+            alt="Dark editorial portrait of a bride in heirloom jewellery"
+          />
+          <p class="text-muted mx-auto cta-description">
+            Thoughtfully handcrafted silhouettes designed to celebrate
+            individuality through luxurious textures and timeless elegance.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-start mb-4 gy-3">
+            <div class="col-lg-8">
+              <h2 id="storiesTitle">
+                <span class="script">stories</span> OF CELEBRATION
+              </h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="text-muted small">
+                Heartfelt words from our clients and their beautiful journey
+                with Sanskriti.
+              </p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-3">
+              <div class="card p-4 h-100 mb-0">
+                <p class="story-quote fs-1 mb-0" aria-hidden="true">&ldquo;</p>
+                <p class="fst-italic">
+                  The craftsmanship, luxurious textures, and thoughtful styling
+                  created an experience that felt truly special from beginning
+                  to end.
+                </p>
+                <div class="border-top pt-2 mt-auto">
+                  <strong class="small d-block text-maroon">Mehar Kapoor</strong
+                  ><small class="text-muted text-uppercase">Festive Edit</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img-stack h-100">
+                <img
+                  class="w-100 h-100 story-image"
+                  src="images/story1.png"
+                  alt="Bridal client portrait"
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="img-stack h-100">
+                <img
+                  class="w-100 h-100 story-image"
+                  src="images/story4.png"
+                  alt="Festive client portrait"
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card p-4 h-100 mb-0">
+                <p class="story-quote fs-1 mb-0" aria-hidden="true">&ldquo;</p>
+                <p class="fst-italic">
+                  Sanskriti beautifully balances heritage artistry with modern
+                  sophistication. Every ensemble felt graceful, refined and
+                  timeless.
+                </p>
+                <div class="border-top pt-2 mt-auto">
+                  <strong class="small d-block text-maroon">Riya Sharma</strong
+                  ><small class="text-muted text-uppercase"
+                    >Occasion Wear</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row align-items-start mb-4 gy-3">
+            <div class="col-lg-8">
+              <h2 id="journalTitle">
+                THE <span class="script">sanskriti</span> JOURNAL
+              </h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="text-muted small">
+                A curated visual diary celebrating craftsmanship, texture, and
+                moments beautifully worn by Sanskriti.
+              </p>
+            </div>
+          </div>
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <a class="img-stack" href="#" aria-label="Play journal film 1"
+                ><img
+                  class="thumb-media w-100"
+                  src="images/instagram1.png"
+                  alt="Journal entry featuring festive drape styling" /><span
+                  class="thumb-play d-flex align-items-center mx-auto justify-content-center rounded-circle align-self-end justify-self-center mb-3"
+                  ><i class="bi bi-play-fill fs-4"></i></span
+              ></a>
+            </div>
+            <div class="col">
+              <a class="img-stack" href="#" aria-label="Play journal film 2"
+                ><img
+                  class="thumb-media w-100"
+                  src="images/instagram2.png"
+                  alt="Journal entry featuring bridal styling" /><span
+                  class="thumb-play d-flex align-items-center mx-auto justify-content-center rounded-circle align-self-end justify-self-center mb-3"
+                  ><i class="bi bi-play-fill fs-4"></i></span
+              ></a>
+            </div>
+            <div class="col">
+              <a class="img-stack" href="#" aria-label="Play journal film 3"
+                ><img
+                  class="thumb-media w-100"
+                  src="images/instagram3.png"
+                  alt="Journal entry featuring silk saree draping" /><span
+                  class="thumb-play d-flex align-items-center mx-auto justify-content-center rounded-circle align-self-end justify-self-center mb-3"
+                  ><i class="bi bi-play-fill fs-4"></i></span
+              ></a>
+            </div>
+            <div class="col">
+              <a class="img-stack" href="#" aria-label="Play journal film 4"
+                ><img
+                  class="thumb-media w-100"
+                  src="images/instagram4.png"
+                  alt="Journal entry featuring heritage weave detail" /><span
+                  class="thumb-play d-flex align-items-center mx-auto justify-content-center rounded-circle align-self-end justify-self-center mb-3"
+                  ><i class="bi bi-play-fill fs-4"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 text-center">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <h2 id="newsTitle" class="mb-2">
+              Join The <span class="script">editorial</span> List
+            </h2>
+            <p class="text-muted small mb-4 newsletter-description">
+              Receive exclusive editorial previews, new arrivals, festive edits,
+              and timeless inspiration from the world of Sanskriti.
+            </p>
+          </div>
+          <form class="row row-cols-auto g-2" onsubmit="return false;">
+            <div class="col">
+              <input
+                type="email"
+                class="form-control newsletter-input"
+                placeholder="Enter your email address"
+                aria-label="Email address"
+                required
+              />
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-tan">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer pt-5 pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <a class="navbar-brand text-white d-inline-block" href="index.html"
+              >sanskriti<small>Traditions Redesigned</small></a
+            >
+            <p class="footer-tagline mt-3 mb-0">
+              Timeless craftsmanship.<br />Unforgettable celebrations.
+            </p>
+            <p class="small footer-description mt-3">
+              Sanskriti is where heritage artistry meets contemporary elegance —
+              thoughtfully crafted for weddings, festivities, and moments that
+              deserve timeless beauty.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="h6-title">Menu</div>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="journal.html">Journal</a></li>
+              <li class="mb-2"><a href="about.html">About us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="h6-title">Collections</div>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="#">Bridal Couture</a></li>
+              <li class="mb-2"><a href="#">Festive Edit</a></li>
+              <li class="mb-2"><a href="#">Bespoke Atelier</a></li>
+              <li class="mb-2"><a href="#">Occasion Wear</a></li>
+              <li class="mb-2"><a href="#">Heritage Weaves</a></li>
+              <li class="mb-2"><a href="#">New Arrivals</a></li>
+              <li class="mb-2"><a href="#">Signature Sarees</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="h6-title">Customer Care</div>
+            <ul class="list-unstyled small">
+              <li class="mb-2"><a href="#">Craftsmanship</a></li>
+              <li class="mb-2"><a href="#">Client Journals</a></li>
+              <li class="mb-2"><a href="#">Care Guide</a></li>
+              <li class="mb-2"><a href="#">FAQs</a></li>
+              <li class="mb-2"><a href="#">Shipping &amp; Delivery</a></li>
+              <li class="mb-2"><a href="#">Returns &amp; Exchange</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="h6-title">Boutique</div>
+            <p class="small d-flex align-items-start gap-2">
+              <i class="bi bi-geo-alt-fill mt-1"></i>Sanskriti Boutique<br />DLF
+              Emporio, Vasant Kunj<br />New Delhi — 110070
+            </p>
+            <p class="small d-flex align-items-start gap-2">
+              <i class="bi bi-telephone-fill mt-1"></i>+91 11 4100 5678
+            </p>
+          </div>
+        </div>
+        <p class="footer-watermark text-center mb-0" aria-hidden="true">
+          SANSKRITI
+        </p>
+
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center gap-3"
+        >
+          <p class="small mb-0">&copy; 2026 Sanskriti. All rights reserved.</p>
+          <div class="d-flex gap-3 small">
+            <a href="#">Instagram</a><a href="#">Pinterest</a
+            ><a href="#">Facebook</a><a href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function scrollRow(id, dir) {
+        document
+          .getElementById(id)
+          .scrollBy({ left: dir * 320, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
